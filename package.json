@@ -7,7 +7,7 @@
     "watch": "parcel watch client/src/index.js",
     "client": "npx live-server",
     "server": "npx nodemon server/index.js localhost 3000 --watch",
-    "batch": "mysql -u root -p < database/schema.sql"
+    "batch": "mysql -u student -p < database/schema.sql"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +25,9 @@
   "devDependencies": {
     "@babel/node": "^7.12.10",
     "@babel/preset-react": "^7.12.10",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "nodemon": "^2.0.7",
     "parcel-bundler": "^1.12.4"
   }
