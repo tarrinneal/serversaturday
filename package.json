@@ -1,35 +1,31 @@
 {
-  "name": "serversaturday",
+  "name": "practice",
   "version": "1.0.0",
-  "description": "banana stache server",
-  "private": true,
+  "description": "practice building from scratch",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production",
-    "start server": "nodemon server/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "parcel watch client/src/index.js",
+    "client": "npx live-server",
+    "server": "npx nodemon server/index.js localhost 3000 --watch",
+    "batch": "mysql -u root -p < database/schema.sql"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tarrinneal/serversaturday.git"
-  },
-  "author": "tarrinneal",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tarrinneal/serversaturday/issues"
-  },
-  "homepage": "https://github.com/tarrinneal/serversaturday#readme",
   "dependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/preset-env": "^7.12.16",
-    "@babel/preset-react": "^7.12.13",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.2.2",
-    "babel-preset-env": "^1.7.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "lodash": "^4.17.20",
+    "live-server": "^1.2.1",
+    "mysql": "^2.18.1",
+    "path": "^0.12.7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/node": "^7.12.10",
+    "@babel/preset-react": "^7.12.10",
     "nodemon": "^2.0.7",
-    "webpack": "^5.21.2",
-    "webpack-cli": "^4.5.0",
-    "webpack-dev-server": "^3.11.2"
+    "parcel-bundler": "^1.12.4"
   }
 }
